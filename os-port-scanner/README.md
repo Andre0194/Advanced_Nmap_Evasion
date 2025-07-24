@@ -1,4 +1,4 @@
-# OS-Specific Nmap Port Scanner - `mrphysiquee` Tool 6
+# OS-Specific Nmap Port Scanner - `mrphysiquee` Tool 3
 
 This tool uses Python to select the most suitable Nmap scan depending on the target operating system — Android or Windows.
 
