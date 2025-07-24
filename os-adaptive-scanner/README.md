@@ -1,4 +1,4 @@
-# OS-Aware Nmap Port Scanner - `mrphysiquee` Tool 4
+# OS-Aware Nmap Port Scanner - `mrphysiquee` Tool 2
 
 This Python script adapts Nmap scanning based on the selected target OS (Android or Windows). Ideal for quick recon in internal networks or labs.
 
