@@ -1,4 +1,4 @@
-# Google Dorking Toolkit - `mrphysiquee` Tool 5
+# Google Dorking Toolkit - `mrphysiquee` Tool 1
 
 This tool contains a curated list of powerful Google dorks for use in OSINT, CTFs, or bug bounty recon.
 
