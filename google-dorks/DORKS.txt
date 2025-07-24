@@ -1,0 +1,39 @@
+# 🔍 Google Dorking Toolkit - by mrphysiquee
+# Use these with caution and only for ethical testing/CTF/OSINT purposes
+
+# 📄 Sensitive Files
+inurl:"/phpinfo.php"
+intitle:"index of" "backup"
+ext:sql | ext:xml | ext:json | ext:conf
+inurl:".env" | intext:"DB_PASSWORD"
+filetype:log intext:"password"
+
+# 🔐 Admin Logins & Panels
+inurl:admin
+inurl:login | intitle:"Admin Login"
+intitle:"Dashboard" inurl:panel
+"Welcome to phpMyAdmin" inurl:phpmyadmin
+
+# 💾 Database Dumps
+filetype:sql "password"
+intext:"Dumping data for table"
+ext:bak | ext:old | ext:sql inurl:backup
+
+# 🖼️ Exposed Cameras
+inurl:"/view/index.shtml" "Network Camera"
+inurl:"top.htm" "Live View / - AXIS"
+
+# 📁 Directory Listings
+intitle:"index of /" +passwd
+intitle:"index of /" +.git
+intitle:"index of /" +.env
+
+# 🔍 Search Engines Tricks
+site:gov filetype:xls password
+site:edu filetype:pdf "confidential"
+site:pastebin.com intext:"password"
+
+# 🔎 CTF/OSINT Specific
+site:trello.com intext:password
+site:github.com intext:"API_KEY"
+site:stackoverflow.com intext:"AWS_SECRET_KEY"
