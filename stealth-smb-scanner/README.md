@@ -1,4 +1,4 @@
-# Stealth SMB Scanner - `mrphysiquee` Tool 3
+# Stealth SMB Scanner - `mrphysiquee` Tool 4
 
 A Python wrapper that stealthily scans a target host for SMB shares and OS details using Nmap NSE scripts.
 
